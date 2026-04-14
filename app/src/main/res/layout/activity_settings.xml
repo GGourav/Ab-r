@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CC000000"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:backgroundTint="#333333" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444444"
+        android:layout_marginBottom="16dp" />
+
+    <!-- PCAP Recording Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Packet Capture"
+        android:textColor="#00FF00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="#333333">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PCAP Recording"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/switch_pcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_pcap_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not recording"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:paddingStart="8dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Packet Logging Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="#333333"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Debug Logging"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/switch_logging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_logging_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logging stopped"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:paddingStart="8dp"
+        android:paddingBottom="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444444"
+        android:layout_marginBottom="16dp" />
+
+    <!-- PCAPdroid Integration -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PCAPdroid Integration"
+        android:textColor="#00FF00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/text_pcapdroid_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checking..."
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_open_pcapdroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open PCAPdroid"
+        android:backgroundTint="#2196F3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444444"
+        android:layout_marginVertical="16dp" />
+
+    <!-- Export Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export &amp; Share"
+        android:textColor="#00FF00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_share_pcap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share PCAP File"
+        android:backgroundTint="#4CAF50" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444444"
+        android:layout_marginVertical="16dp" />
+
+    <!-- PCAP Files List -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Files"
+        android:textColor="#00FF00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text_pcap_files"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No PCAP files"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:fontFamily="monospace" />
+    </ScrollView>
+
+</LinearLayout>
