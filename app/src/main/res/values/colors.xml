@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tier Colors -->
+    <color name="tier_1">#FF1C1C1C</color>
+    <color name="tier_2">#FF808080</color>
+    <color name="tier_3">#FF00FF00</color>
+    <color name="tier_4">#FF0000FF</color>
+    <color name="tier_5">#FFFF0000</color>
+    <color name="tier_6">#FFFF8000</color>
+    <color name="tier_7">#FFFFFF00</color>
+    <color name="tier_8">#FFFFFFFF</color>
+
+    <!-- Enchantment Colors -->
+    <color name="enchant_1">#FF006400</color>
+    <color name="enchant_2">#FF00008B</color>
+    <color name="enchant_3">#FF800080</color>
+    <color name="enchant_4">#FFFFD700</color>
+
+    <!-- Mist Rarity Colors -->
+    <color name="rarity_common">#FF0000FF</color>
+    <color name="rarity_uncommon">#FF00FF00</color>
+    <color name="rarity_rare">#FF00008B</color>
+    <color name="rarity_epic">#FF800080</color>
+    <color name="rarity_legendary">#FFFFD700</color>
+
+    <!-- Entity Colors -->
+    <color name="entity_player">#FFFFFF00</color>
+    <color name="entity_mob">#FFFF6600</color>
+    <color name="entity_boss">#FFFF0000</color>
+    <color name="entity_local_player">#FF00FF00</color>
+
+    <!-- UI Colors -->
+    <color name="radar_background">#CC000000</color>
+    <color name="radar_grid">#44FFFFFF</color>
+</resources>
