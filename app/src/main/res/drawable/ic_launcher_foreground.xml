@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Radar circles -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1.5"
+        android:pathData="M54,54m-26,0a26,26 0,1 1,52 0a26,26 0,1 1,-52 0" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"
+        android:pathData="M54,54m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" />
+
+    <!-- Sweep line -->
+    <path
+        android:fillColor="#8000FF00"
+        android:pathData="M54,54 L94,54 A40,40 0 0,1 54,94 Z" />
+
+    <!-- Center dot -->
+    <path
+        android:fillColor="#00FF00"
+        android:pathData="M54,54m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+
+    <!-- Blips -->
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M70,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+
+    <path
+        android:fillColor="#FFFF00"
+        android:pathData="M35,65m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+
+    <path
+        android:fillColor="#00FFFF"
+        android:pathData="M75,60m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+
+</vector>
